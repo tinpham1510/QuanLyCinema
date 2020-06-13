@@ -1,0 +1,182 @@
+﻿<Window x:Class="QuanLyCinema.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:QuanLyCinema"
+        mc:Ignorable="d"
+         TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.FontWeight="Regular"
+        TextElement.FontSize="13"
+        TextOptions.TextFormattingMode="Ideal"
+        TextOptions.TextRenderingMode="Auto"
+        Background="{DynamicResource MaterialDesignPaper}"
+        FontFamily="{DynamicResource MaterialDesignFont}"
+       
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      
+        xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+       
+     
+        Title="Phần mềm quản lý rạp chiếu phim"
+        Name="mainWindow"
+        Height="800" Width="1200"
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen" Loaded="mainWindow_Loaded">
+
+    <Grid >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <!--binding tieu de-->
+
+        </Grid>
+        <Grid Grid.Row="1" Background="#FF332C2C" Margin="0,10,-0.333,0" ScrollViewer.HorizontalScrollBarVisibility="Auto" MouseDown="Grid_MouseDown" Height="762">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="567*"/>
+                <ColumnDefinition Width="109*"/>
+                <ColumnDefinition Width="518*"/>
+            </Grid.ColumnDefinitions>
+            <StackPanel HorizontalAlignment="Left" Height="753" VerticalAlignment="Top" Width="240" Background="#FF656161">
+                <Button Height="150" Margin="0,0,0.333,0" >
+                    <Button.Background>
+                        <ImageBrush ImageSource="film-movie-industry-creative-symbol-concept-play-stop-pause-button-cinema-abstract-business-logo-vintage-video-camera-media-137072254.jpg" Stretch="UniformToFill"/>
+                    </Button.Background>
+
+                </Button>
+                <Button Command="{Binding InputCommand}" Width="250" Height="70" Background="{DynamicResource {x:Static SystemColors.ControlDarkDarkBrushKey}}" Click="Button_Click">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Grid Grid.Row="0">
+                            <TextBlock Text="Khách hàng" HorizontalAlignment="Center"></TextBlock>
+                        </Grid>
+                        <Grid Grid.Row="1">
+                            <materialDesign:PackIcon 
+                                HorizontalAlignment="Center" Width="24" Height="24" 
+                                Kind="ArrowDownBoldCircleOutline" />
+                        </Grid>
+                    </Grid>
+                </Button>
+                <Button Command="{Binding InputCommand}"  Width="250" Height="70" Background="{DynamicResource {x:Static SystemColors.ControlDarkDarkBrushKey}}">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Grid Grid.Row="0">
+                            <TextBlock Text="Người dùng" HorizontalAlignment="Center"></TextBlock>
+                        </Grid>
+                        <Grid Grid.Row="1">
+                            <materialDesign:PackIcon 
+                                HorizontalAlignment="Center" Width="24" Height="24" 
+                                Kind="ArrowDownBoldCircleOutline" />
+                        </Grid>
+                    </Grid>
+                </Button>
+                <Button Command="{Binding InputCommand}"  Width="250" Height="70" Background="{DynamicResource {x:Static SystemColors.ControlDarkDarkBrushKey}}">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Grid Grid.Row="0">
+                            <TextBlock Text="Phòng chiếu" HorizontalAlignment="Center"></TextBlock>
+                        </Grid>
+                        <Grid Grid.Row="1">
+                            <materialDesign:PackIcon 
+                                HorizontalAlignment="Center" Width="24" Height="24" 
+                                Kind="ArrowDownBoldCircleOutline" />
+                        </Grid>
+                    </Grid>
+                </Button>
+                <Button Command="{Binding InputCommand}" Width="250" Height="70" Background="{DynamicResource {x:Static SystemColors.ControlDarkDarkBrushKey}}">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Grid Grid.Row="0">
+                            <TextBlock Text="Loại phim" HorizontalAlignment="Center"></TextBlock>
+                        </Grid>
+                        <Grid Grid.Row="1">
+                            <materialDesign:PackIcon 
+                                HorizontalAlignment="Center" Width="24" Height="24" 
+                                Kind="ArrowDownBoldCircleOutline" />
+                        </Grid>
+                    </Grid>
+                </Button>
+                <Button Command="{Binding InputCommand}" Width="250" Height="70" Background="{DynamicResource {x:Static SystemColors.ControlDarkDarkBrushKey}}">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Grid Grid.Row="0">
+                            <TextBlock Text="Phim" HorizontalAlignment="Center"></TextBlock>
+                        </Grid>
+                        <Grid Grid.Row="1">
+                            <materialDesign:PackIcon 
+                                HorizontalAlignment="Center" Width="24" Height="24" 
+                                Kind="ArrowDownBoldCircleOutline" />
+                        </Grid>
+                    </Grid>
+                </Button>
+                <Button Command="{Binding InputCommand}" Width="250" Height="70" Background="{DynamicResource {x:Static SystemColors.ControlDarkDarkBrushKey}}">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Grid Grid.Row="0">
+                            <TextBlock Text="Lịch chiếu" HorizontalAlignment="Center"></TextBlock>
+                        </Grid>
+                        <Grid Grid.Row="1">
+                            <materialDesign:PackIcon 
+                                HorizontalAlignment="Center" Width="24" Height="24" 
+                                Kind="ArrowDownBoldCircleOutline" />
+                        </Grid>
+                    </Grid>
+                </Button>
+                <Button Command="{Binding InputCommand}" Width="250" Height="70" Background="{DynamicResource {x:Static SystemColors.ControlDarkDarkBrushKey}}">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Grid Grid.Row="0">
+                            <TextBlock Text="Loại vé" HorizontalAlignment="Center"></TextBlock>
+                        </Grid>
+                        <Grid Grid.Row="1">
+                            <materialDesign:PackIcon 
+                                HorizontalAlignment="Center" Width="24" Height="24" 
+                                Kind="ArrowDownBoldCircleOutline" />
+                        </Grid>
+                    </Grid>
+                </Button>
+                <Button Command="{Binding InputCommand}" Width="250" Height="70" Background="{DynamicResource {x:Static SystemColors.ControlDarkDarkBrushKey}}">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Grid Grid.Row="0">
+                            <TextBlock Text="Vé" HorizontalAlignment="Center"></TextBlock>
+                        </Grid>
+                        <Grid Grid.Row="1">
+                            <materialDesign:PackIcon 
+                                HorizontalAlignment="Center" Width="24" Height="24" 
+                                Kind="ArrowDownBoldCircleOutline" />
+                        </Grid>
+                    </Grid>
+                </Button>
+            </StackPanel>
+            <Grid x:Name="Grid_page" Grid.ColumnSpan="3" HorizontalAlignment="Left" Height="606" Margin="245,146,0,0" VerticalAlignment="Top" Width="940"/>
+
+        </Grid>
+    </Grid>
+</Window>
